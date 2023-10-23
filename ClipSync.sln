@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipSync.Console", "ClipSync.Console\ClipSync.Console.csproj", "{CBC43952-B212-4C6F-A81C-852D4E105FA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipSync.Logic", "ClipSync.Logic\ClipSync.Logic.csproj", "{7E6AB424-A447-43F4-B919-991CD44B8900}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBC43952-B212-4C6F-A81C-852D4E105FA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC43952-B212-4C6F-A81C-852D4E105FA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC43952-B212-4C6F-A81C-852D4E105FA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC43952-B212-4C6F-A81C-852D4E105FA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E6AB424-A447-43F4-B919-991CD44B8900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6AB424-A447-43F4-B919-991CD44B8900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6AB424-A447-43F4-B919-991CD44B8900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6AB424-A447-43F4-B919-991CD44B8900}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45666B8B-4277-434A-915A-0322A7CF34DA}
+	EndGlobalSection
+EndGlobal
