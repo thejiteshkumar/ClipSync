@@ -2,5 +2,7 @@
 {
     public interface IClipboardManager
     {
+        Task GetClipBoardDetail();
+        Task SetClipBoardDetail();
     }
 }
