@@ -1,18 +1,32 @@
 ﻿namespace ClipSync.Logic
 {
-    public class ClipBoardManger : IClipboardManager
+    public static class ClipBoardManger
     {
-
-        public Task GetClipBoardDetail()
+        public static void SetText(string p_Text)
         {
-            var temp = Clipboard.GetText();
-
-            throw new NotImplementedException();
+            Thread STAThread = new Thread(
+                delegate ()
+                {
+                    System.Windows.Forms.Clipboard.SetText(p_Text);
+                });
+            STAThread.SetApartmentState(ApartmentState.STA);
+            STAThread.Start();
+            STAThread.Join();
         }
 
-        public Task SetClipBoardDetail()
+        public static string GetText()
         {
-            throw new NotImplementedException();
+            string ReturnValue = string.Empty;
+            Thread STAThread = new Thread(
+                delegate ()
+                {
+                    ReturnValue = System.Windows.Forms.Clipboard.GetText();
+                });
+            STAThread.SetApartmentState(ApartmentState.STA);
+            STAThread.Start();
+            STAThread.Join();
+
+            return ReturnValue;
         }
     }
 }
