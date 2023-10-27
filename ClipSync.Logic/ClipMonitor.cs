@@ -1,14 +1,20 @@
-﻿using System.Runtime.InteropServices;
-
-namespace ClipSync.Logic
+﻿namespace ClipSync.Logic
 {
-    public class ClipMonitor
+    public static class ClipMonitor
     {
-        [DllImport("User32.dll", CharSet = CharSet.Auto)]
-        public static extern IntPtr SetClipboardViewer(IntPtr viewer);
+        public delegate void OnClipboardChangeEventHandler(ClipboardFormat format, object data);
 
+        public static event OnClipboardChangeEventHandler OnClipboardChange;
 
-        [DllImport("User32.dll", CharSet = CharSet.Auto)]
-        public static extern bool ChangeClipboardChain(IntPtr hWndRemove, IntPtr hWndNewNext);
+        public static void Start()
+        {
+            ClipboardWatcher.Start();
+            ClipboardWatcher.OnClipboardChange += (ClipboardFormat format, object data) =>
+            {
+                if (OnClipboardChange != null)
+                    OnClipboardChange(format, data);
+            };
+        }
+
     }
 }
