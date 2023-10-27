@@ -8,6 +8,6 @@ Console.WriteLine("hello");
 
 CallClipboard callClipboard = new CallClipboard();
 
-callClipboard.CallMe();
+callClipboard.CallClipboardMonitor();
 
 
