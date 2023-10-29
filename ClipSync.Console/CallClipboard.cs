@@ -15,7 +15,9 @@ namespace ClipSync.Console
 
         private void ClipboardMonitor_OnClipboardChange(ClipboardFormat format, object data)
         {
+            System.Console.WriteLine("------- New Clip -----");
             System.Console.WriteLine(data);
+            System.Console.WriteLine("---------------------------");
 
             if (data != null)
             {

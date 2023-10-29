@@ -4,7 +4,8 @@
 
 using ClipSync.Console;
 
-Console.WriteLine("hello");
+Console.WriteLine("This is clip Sync Starting up");
+Console.WriteLine("------------------------------------");
 
 CallClipboard callClipboard = new CallClipboard();
 
