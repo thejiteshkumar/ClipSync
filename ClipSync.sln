@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipSync.Console", "ClipSync.Console\ClipSync.Console.csproj", "{CBC43952-B212-4C6F-A81C-852D4E105FA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClipSync.Console", "ClipSync.Console\ClipSync.Console.csproj", "{CBC43952-B212-4C6F-A81C-852D4E105FA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipSync.Logic", "ClipSync.Logic\ClipSync.Logic.csproj", "{7E6AB424-A447-43F4-B919-991CD44B8900}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClipSync.Logic", "ClipSync.Logic\ClipSync.Logic.csproj", "{7E6AB424-A447-43F4-B919-991CD44B8900}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClipSync.UI", "ClipSync.UI\ClipSync.UI.csproj", "{F18C3540-0106-443A-8EE5-E9B91420C469}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,12 @@ Global
 		{7E6AB424-A447-43F4-B919-991CD44B8900}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E6AB424-A447-43F4-B919-991CD44B8900}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E6AB424-A447-43F4-B919-991CD44B8900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F18C3540-0106-443A-8EE5-E9B91420C469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F18C3540-0106-443A-8EE5-E9B91420C469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F18C3540-0106-443A-8EE5-E9B91420C469}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F18C3540-0106-443A-8EE5-E9B91420C469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F18C3540-0106-443A-8EE5-E9B91420C469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F18C3540-0106-443A-8EE5-E9B91420C469}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
